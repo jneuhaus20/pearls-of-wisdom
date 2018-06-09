@@ -1,0 +1,38 @@
+{
+    "$schema": "./schema.json",
+    "attribution": {
+        "type": "book",
+        "title": "The Effective Engineer",
+        "author": "Edmond Lau",
+        "url": "http://www.effectiveengineer.com/"
+    },
+    "pearls": [
+        {
+            "title": "Use leverage to measure your engineering effectiveness",
+            "body": [
+                "Leverage = Impact Produced / Time Invested",
+                "Focus on what generates the highest return on investment for your time spent."
+            ],
+            "location": "Chapter 1 - Focus on high leverage activities",
+            "tags": ["leverage", "efficiency"]
+        },
+        {
+            "title": "Systematically increase the leverage of your time",
+            "body": [
+                "Leverage = Impact Produced / Time Invested",
+                "Find ways to get an activity done more quickly, to increase the impact of an activity, or to shift to activities with higher leverage."
+            ],
+            "location": "Chapter 1 - Focus on high leverage activities",
+            "tags": ["leverage", "efficiency"]
+        },
+        {
+            "title": "Focus your effort on leverage points",
+            "body": [
+                "Leverage = Impact Produced / Time Invested",
+                "Time is your most limited asset. Identify the habits the produce disproportionately high impact for the time you invest."
+            ],
+            "location": "Chapter 1 - Focus on high leverage activities",
+            "tags": ["leverage", "efficiency"]
+        }
+    ]
+}

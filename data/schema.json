@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Pearl",
+    "description": "Describes a source of wisdom and the tidbits therein",
+    "type": "object",
+    "required": [
+        "attribution",
+        "pearls"
+    ],
+    "properties": {
+        "attribution": {
+            "description": "The source of this wisdom",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "description": "Type of the source",
+                    "type": "string",
+                    "enum": [
+                        "book",
+                        "web"
+                    ]
+                },
+                "title": {
+                    "description": "Title of the book/site/etc.",
+                    "type": "string"
+                },
+                "author": {
+                    "description": "Author of the book/blog",
+                    "type": "string"
+                },
+                "url": {
+                    "description": "Authoritative URL for the resource",
+                    "type": "string",
+                    "format": "uri"
+                }
+            },
+            "required": ["type", "title"],
+            "anyOf": [
+                {
+                    "properties": {
+                        "type": { "enum": ["book"]}
+                    },
+                    "required": ["author"]
+                },
+                {
+                    "properties": {
+                        "type": { "enum": ["web"]}
+                    },
+                    "required": ["url"]
+                }
+            ]
+        },
+        "pearls": {
+            "description": "An array of useful bits of wisdom",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": { "type": "string" },
+                    "body": {
+                        "description": "An array of strings, one for each line, representing the bulk of the info. Markdown supported",
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "location": {
+                        "description": "A URI or description of the location in hard copy (e.g. book chapter)",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": { "type": "string" },
+                        "uniqueItems": true
+                    }
+                },
+                "required": ["title"]
+            }
+        }
+    }
+}
