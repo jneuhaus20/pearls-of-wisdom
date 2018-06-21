@@ -1,0 +1,38 @@
+{
+  "name": "pearl",
+  "plural": "pearls",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": [
+        "string"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "attribution": {
+      "type": "belongsTo",
+      "model": "attribution",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
