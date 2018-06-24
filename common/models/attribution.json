@@ -27,10 +27,7 @@
     "pearls": {
       "type": "hasMany",
       "model": "pearl",
-      "foreignKey": "",
-      "options": {
-        "disableInclude": true
-      }
+      "foreignKey": ""
     }
   },
   "acls": [],
