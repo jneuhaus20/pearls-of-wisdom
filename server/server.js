@@ -2,7 +2,6 @@
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');
-const morgan = require('./log.js');
 const bodyParser = require('body-parser');
 
 const app = module.exports = loopback();
@@ -11,7 +10,6 @@ app.start = function() {
   app.use(bodyParser.json());
   app.use(bodyParser.text());
   app.use(bodyParser.urlencoded({extended: true}));
-  app.use(morgan);
 
   // start the web server
   return app.listen(function() {
