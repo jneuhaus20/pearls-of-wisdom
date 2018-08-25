@@ -15,11 +15,11 @@
   },
 
   "attribution": {
-    "dataSource": "in-mem-db",
+    "dataSource": "mongodb",
     "public": true
   },
   "pearl": {
-    "dataSource": "in-mem-db",
+    "dataSource": "mongodb",
     "public": true
   }
 }
