@@ -2,7 +2,7 @@
   "name": "pearls",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,19 +12,20 @@
     "@types/body-parser": "^1.17.0",
     "@types/express": "^4.16.0",
     "body-parser": "^1.18.3",
-    "compression": "^1.0.3",
+    "compression": "^1.7.3",
     "cors": "^2.5.2",
-    "helmet": "^3",
-    "loopback": "^3.20.0",
+    "helmet": "^3.13.0",
+    "loopback": "^3.22.2",
     "loopback-boot": "^2.27.1",
-    "loopback-component-explorer": "^6",
-    "mongodb": "^3.0.10",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-connector-mongodb": "^3.6.0",
+    "mongodb": "^3.1.4",
     "morgan": "^1.9.0",
     "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^3"
+    "strong-error-handler": "^3.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.0.0",
+    "eslint": "^5.5.0",
     "eslint-config-loopback": "^10.0.0",
     "nsp": "^3.2.1"
   }
