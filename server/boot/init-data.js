@@ -10,9 +10,8 @@ module.exports = app => {
     const attr = data.attribution;
     
     console.log('Importing attribution...');
-    attrModel.upsert(attr, (err, attrObj) => {
-        console.log(err);
-        console.log('... Success! Created attribution: ', attrObj);
+    attrModel.findOrCreate({where: attr}, attr, (err, attrObj) => {
+        console.log('... Success! Created attribution');
 
         const pearlModel = app.models.Pearl;
         console.log('Importing pearls...');
@@ -21,7 +20,7 @@ module.exports = app => {
         .map(pearl => ({...pearl, attributionId: attrObj.id}))
         .forEach(pearl => {
             console.log('Importing a pearl...');
-            pearlModel.upsert(pearl, (err, obj) => console.log(err || '... Success!'));
+            pearlModel.findOrCreate({where: pearl}, pearl, (err, obj) => console.log(err || '... Success!'));
         });
     });
 
