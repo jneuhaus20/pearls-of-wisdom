@@ -25,6 +25,7 @@ module.exports = function(Pearl) {
 
     Pearl.remoteMethod('random', {
         description: 'Retrieves a random Pearl',
+        http: {verb: 'get'},
         returns: {arg: 'pearl', type: Pearl}
     });
 };
