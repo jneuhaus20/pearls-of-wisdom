@@ -11,6 +11,11 @@ module.exports = app => {
     
     console.log('Importing attribution...');
     attrModel.findOrCreate({where: attr}, attr, (err, attrObj) => {
+        if (err) {
+            console.log('Failed to create attribution!', err);
+            return;
+        }
+        
         console.log('... Success! Created attribution');
 
         const pearlModel = app.models.Pearl;
