@@ -1,5 +1,5 @@
 {
-    "$schema": "./schema.json",
+    "$schema": "../schema.json",
     "attribution": {
         "type": "book",
         "title": "The Effective Engineer",
@@ -7,6 +7,7 @@
         "url": "http://www.effectiveengineer.com/"
     },
     "pearls": [
+        // Chapter 1
         {
             "title": "Use leverage to measure your engineering effectiveness",
             "body": [
@@ -14,12 +15,11 @@
                 "Focus on what generates the highest return on investment for your time spent."
             ],
             "location": "Chapter 1 - Focus on high leverage activities",
-            "tags": ["leverage", "efficiency"]
+            "tags": ["leverage"]
         },
         {
             "title": "Systematically increase the leverage of your time",
             "body": [
-                "Leverage = Impact Produced / Time Invested",
                 "Find ways to get an activity done more quickly, to increase the impact of an activity, or to shift to activities with higher leverage."
             ],
             "location": "Chapter 1 - Focus on high leverage activities",
@@ -28,11 +28,157 @@
         {
             "title": "Focus your effort on leverage points",
             "body": [
-                "Leverage = Impact Produced / Time Invested",
                 "Time is your most limited asset. Identify the habits the produce disproportionately high impact for the time you invest."
             ],
             "location": "Chapter 1 - Focus on high leverage activities",
             "tags": ["leverage", "efficiency"]
+        },
+
+        // Chapter 2
+        {
+            "title": "Own your story.",
+            "body": [
+                "Focus on changes within your sphere of influence.",
+                "View failures and challenges through a growth mindset, and see them as opportunities to learn."
+            ],
+            "location": "Chapter 2 - Optimize for Learning",
+            "tags": ["opportunity", "failure", "growth", "learning"]
+        },
+        {
+            "title": "Don't shortchange your learning rate.",
+            "body": [
+                "Learning compounds like interest.",
+                "The more you learn, the easier it is to apply prior insights and lessons to learn new things.",
+                "Optimize for learning, particularly early in your career."
+            ],
+            "location": "Chapter 2 - Optimize for Learning",
+            "tags": ["growth", "optimization"]
+        },
+        {
+            "title": "Find work environments that can sustain your growth.",
+            "body": [
+                "Interview the people at the team or company you're considering.",
+                "Find out what opportunities they provide for onboarding and mentoring, how transparent they are internally, how fast they move, what your prospective coworkers are like, and how much autonomy you'll have."
+            ],
+            "location": "Chapter 2 - Optimize for Learning",
+            "tags": ["growth", "opportunity", "onboarding"]
+        },
+        {
+            "title": "Capitalize on opportunities at work to improve your technical skills..",
+            "body": [
+                "Learn from your best co-workers.",
+                "Study their code and their code reviews.",
+                "Dive into any available educational material provided by your company, and look into classes or books that your workplace might be willing to subsidize."
+            ],
+            "location": "Chapter 2 - Optimize for Learning",
+            "tags": ["growth", "learning"]
+        },
+        {
+            "title": "Locate learning opportunities outside of the workplace.",
+            "body": [
+                "Challenge yourself to become better by just 1% a day.",
+                "Not all of your learning will necessarily relate to engineering skills, but being a happier and better learner will help you become a more effective engineer in the long run."
+            ],
+            "location": "Chapter 2 - Optimize for Learning",
+            "tags": ["growth", "learning"]
+        },
+
+        // Chapter 3
+        {
+            "title": "Write down and review to-dos.",
+            "body": [
+                "Spend your mental energy on prioritizing and processing your tasks rather than on trying to remember them.",
+                "Treat your brain as a processor, not as a memory bank."
+            ],
+            "location": "Chapter 3 - Prioritize Regularly",
+            "tags": ["prioritization"]
+        },
+        {
+            "title": "Work on what directly leads to value.",
+            "body": [
+                "Don't try to do everything.",
+                "Regularly ask yourself if there's something higher-leverage that you could be doing."
+            ],
+            "location": "Chapter 3 - Prioritize Regularly",
+            "tags": ["leverage", "prioritization"]
+        },
+        {
+            "title": "Work on the important and non-urgent.",
+            "body": [
+                "Prioritize long-term investments that increase your effectiveness, even if they don't have a deadline."
+            ],
+            "location": "Chapter 3 - Prioritize Regularly",
+            "tags": ["prioritization"]
+        },
+        {
+            "title": "Reduce context switches.",
+            "body": [
+                "Protect large blocks of time for your creative output.",
+                "Limit the number of ongoing projects so you that you don't spend your cognitive energy actively juggling tasks."
+            ],
+            "location": "Chapter 3 - Prioritize Regularly",
+            "tags": ["prioritization", "context-switching"]
+        },
+        {
+            "title": "Make if-then plans to combat procrastination.",
+            "body": [
+                "Binding an intention to do something to a trigger significantly increases the likelihood that you'll get it done."
+            ],
+            "location": "Chapter 3 - Prioritize Regularly",
+            "tags": []
+        },
+        {
+            "title": "Make prioritization a habit.",
+            "body": [
+                "Experiment to figure out a good workflow.",
+                "Prioritize regularly, and it'll get easier to focus on and complete your highest-leverage activities."
+            ],
+            "location": "Chapter 3 - Prioritize Regularly",
+            "tags": ["leverage", "prioritization", "iteration"]
+        },
+
+        // Chapter 4
+        {
+            "title": "The faster you can iterate, the more you can learn.",
+            "body": [
+                "Conversely, when you move too slowly trying to avoid mistakes, you lose opportunities."
+            ],
+            "location": "Chapter 4 - Invest in Iteration Speed",
+            "tags": ["iteration", "learning"]
+        },
+        {
+            "title": "Invest in tooling.",
+            "body": [
+                "Faster compile times, faster deployment cycles, and faster turnaround times for development all provide time-saving benefits that compound the more you use them."
+            ],
+            "location": "Chapter 4 - Invest in Iteration Speed",
+            "tags": ["iteration", "tooling"]
+        },
+        {
+            "title": "Optimize your debugging workflow.",
+            "body": [
+                "Don't underestimate how much time gets spent validating that your code works.",
+                "Invest enough time to shorten those workflows."
+            ],
+            "location": "Chapter 4 - Invest in Iteration Speed",
+            "tags": ["iteration", "debugging"]
+        },
+        {
+            "title": "Master the fundamentals of your craft.",
+            "body": [
+                "Get comfortable and efficient with the development environment that you use on a daily basis.",
+                "This will pay off dividends throughout your career."
+            ],
+            "location": "Chapter 4 - Invest in Iteration Speed",
+            "tags": ["iteration"]
+        },
+        {
+            "title": "Take a holistic view of your iteration loop.",
+            "body": [
+                "Don't ignore any organizational and team-related bottlenecks that may be within your circle of influence."
+            ],
+            "location": "Chapter 4 - Invest in Iteration Speed",
+            "tags": ["iteration"]
         }
     ]
 }
